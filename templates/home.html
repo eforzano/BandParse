@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+{% block content %}
+	<div class="jumbo">
+		<h2> Welcome to Band Advocate </h2>
+		<p>Enter a band to find a list of similar bands</p>
+		<button type="button" id="submitBtn">Search</button>
+		<input type="search" id="mySearch" placeholder="Enter a band name">
+		<strong><p id="originBand"></p></strong>
+		<p id="output"></p>
+		<script src="static/js/jquery-1.9.0.js"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename='js/main.js') }}"></script>
+	</div>
+
+{% endblock %}
